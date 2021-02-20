@@ -2,62 +2,69 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>TO DO APP</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>TO DO APP</title>
 </head>
 
 <body>
+  <div class="loader">
+    <img src="assets/images/loaders/25.gif" alt=""></imgsrc>
+  </div>
 
-    <div class="first-time-setup-modal">
-        <input type="text" class="user-name-input">
-        <button class="first-time-setup-modal-button">Setup</button>
-    </div>
+  <div class="notification-area"></div>
+  <div class="new-category-section">
+    <input type="text" class="new-category-name-input">
+    <button class="new-category-name-add-button">OK</button>
+  </div>
 
-    <div class="task-creator">
-        <button class="task-creator-close-button"><img src="assets/images/icons/plus.svg" alt=""></button>
-            <p>New Task</p> 
-            <label class="task-name-input-label" for="">What are you planning?</label>
-            <input class="task-name-input" type="text">
+  <div class="first-time-setup-modal">
+    <p>Enter your name: </p>
+    <input type="text" class="user-name-input">
+    <button class="first-time-setup-modal-button">Setup</button>
+  </div>
 
-            <button value="personal" class="category-select-button">Select Category</button>
-            <ul class="category-select-list">
-                <button value="work" class="category-select-list-button">Work</button>
-                <button value="personal" class="category-select-list-button">Personal</button>
-                <button value="recreation" class="category-select-list-button">Recreation</button>
-                <button value="hobby" class="category-select-list-button">Hobby</button>
-            </ul>
+  <div class="task-creator">
+    <button class="task-creator-close-button"><img src="assets/images/icons/plus.svg" alt=""></button>
+    <p>New Task</p>
+    <label class="task-name-input-label" for="">What are you planning?</label>
+    <input class="task-name-input" type="text">
 
+    <button value="personal" class="category-select-button">Select Category</button>
+    <ul class="category-select-list">
+      <button value="new-category" class="add-category-button">+
+      </button>
+    </ul>
 
-            <button class="add-task-button">Add Task</button>
-    </div>
+    <button class="add-task-button">Add Task</button>
+  </div>
 
-    <div class="heading">
-        <p>Hello <span class="username"></span></p>
-    </div>
-   
-
-    <div class="task-list">
-        <p class="empty-task-list-message">You haven't added an tasks yet. tap the "+" button below to add a task</p>
-    </div>
-
-    <div class="footer">
-        <a href="#" class="resize-task-button">
-            <img src="assets/images/icons/grid.png">
-        </a>
-        <a href="#" class="create-task-button">
-            <img src="assets/images/icons/plusincircle.svg">
-        </a>
-        <a href="#" class="save-task-button">
-            <img src="assets/images/icons/save.png">
-        </a>
-    </div>
-
-    
+  <div class="heading">
+    <p>Hello, <span class="username"></span></p>
+  </div>
 
 
-    <script src="assets/js/script.js"></script>
+  <div class="task-list">
+    <p class="empty-task-list-message">You haven't added an tasks yet. tap the "+" button below to add a task</p>
+  </div>
+
+  <div class="footer">
+    <a href="#" class="resize-task-button">
+      <img src="assets/images/icons/grid.png">
+    </a>
+    <a href="#" class="create-task-button">
+      <img src="assets/images/icons/plusincircle.svg">
+    </a>
+    <a href="#" class="save-task-button">
+      <img src="assets/images/icons/save.png">
+    </a>
+  </div>
+
+
+
+
+  <script src="assets/js/script.js" type="module"></script>
 </body>
 
 </html>
